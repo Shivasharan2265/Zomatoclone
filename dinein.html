@@ -1,0 +1,401 @@
+<html>
+    <head>
+        <title>Zomato</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8511459198.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+            header{
+      width: 100%;
+      height: 10vh;
+      overflow: hidden;
+      position: relative;
+      object-fit: cover;
+    }
+    .img1{
+    position: relative;
+      
+    }
+        nav{
+            background-color: white;
+            display: flex;
+            display: flex;
+            margin: 1vh 7vw;
+            margin-top: 2px;
+            list-style: none;
+            justify-content: space-between;
+            color: white;
+            font-size: 1em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+       
+        .search{
+            margin-top: 10px;
+            display: flex;
+            width: 55vw;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            padding: 10px 0;
+
+        }
+        .search input{
+      outline: none;
+      border: none;
+      width: 50%;
+      padding-left: 10px;
+      font-size: 15px;
+      background-color: whitesmoke;
+      
+    }
+    .search p{
+        margin-top: -5px;
+      align-items: center;
+      font-weight: lighter;
+      color: gray;
+      border-right: 1px solid grey;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      padding-right: 10px;
+      padding-top: 1px;
+      padding-left: 10px;
+    }
+    .dropbtn{
+      background-color: whitesmoke;
+      border: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+    .search i:first-child{
+      font-size: 20px;
+      color:rgb(238, 95, 29);
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 10px;
+    }
+    .search i{
+      margin-left: 10px;
+      color: gray;
+      padding-left: 10px;
+    }
+    .nav1{
+      text-decoration: none;
+      margin-top: 20px;
+      margin-left: 150px;
+      display: flex;
+      list-style: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.5rem;
+    }
+    .sec1{
+      display: flex;
+      background-color: whitesmoke;
+      justify-content: center;
+      margin-bottom: 0v;
+    }
+    .box{
+      margin-top: -5px;
+      padding: 10px;
+      background-color: whitesmoke;
+      position: relative;
+      width: 270px;
+      margin: 0px 10px;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .box img{
+      margin-left: -5px;
+      padding: 10px;
+      width: 350px;
+      height: 250px;
+    
+    }
+    .btns{
+      
+      margin-top: 30px;
+      margin-left: 120px;
+    }
+    .filter{
+      background-color: whitesmoke;
+      border-color: black;
+      color: gray;
+    }
+    .rating{
+      background-color: whitesmoke;
+      border-color: black;
+      color: gray;
+    }
+    .cusines{
+      background-color: whitesmoke;
+      border-color: black;
+      color: gray;
+    }
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="img1">
+                  <a href="index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Jq7Wv57QQsbE3kZ3r20BtHxD2z9J02ud1g8eKMxaJfLtDgRv2Ku4GBxNJ7D3rFYsJw&usqp=CAU" alt="" style="height: 60px; width: 200px;"></a>
+                </div>
+                <div class="search">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p style="padding-top: 5px;">#38, Asian Buziness Center,Klb</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for Restaurants, Cusines or Dish">
+                  </div>
+                <ul class="l" style="display: flex; color: black; list-style: none; font-size: large; position: relative; font-family: Verdana, Geneva, Tahoma, sans-serif;margin-top: 25px;">
+                    <li><a href="login.html" class="Login" style="text-decoration: none; color:gray; margin-right: 35px; ">Login</a></li>
+                    <li><a href="signup.html" class="signup" style="text-decoration: none; color: gray; margin-right: 35px;">Sign-up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <div class="nav1 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html"><img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png" style="height: 40; width: 40;border-radius: 15px;">&nbsp;Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="margin-left: 30px;" href="#"><img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png" style="height: 40; width: 40; border-radius: 5px;">&nbsp;Dining out</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  style="margin-left: 30px;"href="#"><img src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png" style="height: 40; width: 40;border-radius: 15px;">&nbsp;Night life</a>
+            </li>
+          </div>
+          <br>
+          <div class="btns">
+            <button class="btn filter"><i class="fa-solid fa-filter"></i>&nbsp;Filters</button>
+            <button class="btn rating">Rating : 4+</button>
+            <button class="btn cusines">Cusines</button>
+        </div>
+        <div class="container" style="margin-top: 20px;">
+          <img src="https://b.zmtcdn.com/data/o2_assets/da94405b04f6ae6bf64a4e2a01b1b5c11686563732.png" alt="" style="height: 300px;">
+  
+        </div>
+        <br>
+          <div class="container-fluid" style="background-color: whitesmoke;">
+            <p class="pr" style="margin-left: 50px; font-size: 2rem; font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: whitesmoke;">
+              Collections
+              <div class="line" style="margin-left: 50px; font-family: Arial, Helvetica, sans-serif; color: gray; font-size: larger;">
+               Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="Collections" style="text-decoration: none; color: rgb(48, 100, 18);" >All Collections in Kalaburagi</a>
+              </div>
+             
+            </p>
+            
+            <section class="sec1" style="padding-left: 80px; padding-right: 80px; padding-top: 20px; padding-bottom: 20px; margin-top: -5px;">
+              <div class="box" >
+                <img src="https://b.zmtcdn.com/data/pictures/0/20540040/04ac68e98bd062fbaf9b66af8d233094_featured_v2.jpg" alt="">
+                <div class="boxp" style="font-family: arial Verdana, Geneva, Tahoma, sans-serif; font-size: 17px; color: slategray; margin-left: 45px;"> Newly Open Cafe's&nbsp;<i class="fa-solid fa-caret-right fa-rotate-90 fa-lg"></i></div>
+              </div>
+              <div class="box">
+                <img src="https://b.zmtcdn.com/data/pictures/1/19890381/bd064a542ddd96b798c590fcf7321b03_featured_v2.jpg" alt="">
+                <div class="boxp" style="font-family:arial Verdana, Geneva, Tahoma, sans-serif; font-size: 17px;  color: gray; margin-left: 20px;"> Newly Open Restaurants&nbsp;<i class="fa-solid fa-caret-right fa-rotate-90 fa-lg"></i></div>
+              </div>
+              <div class="box">
+                <img src="https://b.zmtcdn.com/data/pictures/9/18843699/fb66205bef846cabc8e0fcfdfabfaac5_featured_v2.jpg" alt="">
+                <div class="boxp" style="font-family: arial Verdana, Geneva, Tahoma, sans-serif; font-size: 17px;  color: slategray; margin-left: 36px;"> Trending Restaurants&nbsp;<i class="fa-solid fa-caret-right fa-rotate-90 fa-lg"></i></div>
+              </div>
+                <div class="box">
+                  <img src="https://b.zmtcdn.com/data/pictures/9/20574369/58a6e20fc66bbfd85d3586e123505fe3_featured_v2.jpg" alt="">
+                  <div class="boxp" style="font-family: arial Verdana, Geneva, Tahoma, sans-serif; font-size: 17px ; color: slategray; margin-left: 55px;"> Rooftop Places&nbsp;<i class="fa-solid fa-caret-right fa-rotate-90 fa-lg"></i></div>
+                </div>
+            </section>
+          </div>
+          
+        <div class="explore" style=" margin-left: 60px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
+          Explore options near me
+          <br>
+        </div>
+        <br>
+
+
+
+
+        
+        <div class="butons" style="margin-left: 120px; margin-right: 120px;">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" style="margin-bottom: 30px; border-color: gray; ">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: whitesmoke;">
+                  <p class="p1" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger; margin-top: 5px;">Popular cuisines near me</p>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body" style="color: gray;">
+                  Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meContinental food near meDesserts food near meIce Cream food near meJuices food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" style="margin-bottom: 30px; border-color:gray; ">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <p class="p1" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;margin-top: 5px;">Popular restaurant types near me</p>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body" style="color: gray;">
+                  Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meContinental food near meDesserts food near meIce Cream food near meJuices food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" style="margin-bottom: 30px; border-color: gray; ">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <p class="p1" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;margin-top: 5px;">Top Restaurant Chains</p>                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body" style="color: gray;">
+                  Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meContinental food near meDesserts food near meIce Cream food near meJuices food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" style="margin-bottom: 30px; border-color: gray; ">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <p class="p1" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;margin-top: 5px;">Cities We Deliver To</p>                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body" style="color: gray;">
+                  Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meContinental food near meDesserts food near meIce Cream food near meJuices food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+        <section>
+          <div class="footer" style="background-color: white;">
+            <div class="nav2">
+              <ul class="f" style="list-style: none; display: flex; align-items: center;">
+                <li><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Jq7Wv57QQsbE3kZ3r20BtHxD2z9J02ud1g8eKMxaJfLtDgRv2Ku4GBxNJ7D3rFYsJw&usqp=CAU" alt="" height="100px" width="300px" class="im" style="margin-left: 30px;"></a></li>
+                <li><button class="btn India" style="margin-top: 30px; margin-left: 30px; background-color: white; border-color: black; margin-left: 700px;"><img src="data:image/png;base64,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" alt="" width="" height="15px"> &nbsp;India</button></li>
+                <li><button class="btn eng" style="margin-top: 30px; margin-left: 30px; background-color: white; border-color: black;"><i class="fa-solid fa-earth-americas"></i>&nbsp;English</button></li>
+              </ul>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="abt">
+                    <ul class="one" style="list-style: none; ">
+                      <li class="">ABOUT ZOMATO</li>
+                      <br>
+                      <div class="one1" style="color: gray; font-weight:lighter">
+                      <li>Who We Are</li>
+                      <li>Blog</li>
+                      <li>Work With Us</li>
+                      <li>Investor Relations</li>
+                      <li>Report Fraud</li>
+                      <li>Contact Us</li></div>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="verse">
+                    <ul class="tw" style="list-style: none;">
+                      <li>ZOMAVERSE</li>
+                      <br>
+                      <div class="two" style="color: gray; font-weight:lighter">
+                      <li>Zomato</li>
+                      <li>Blinkit</li>
+                      <li>Feeding India</li>
+                      <li>Hyperpure</li>
+                      <li>Zomaland</li></div>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="cl3">
+                    <div>
+                    <ul class="rr" style="list-style: none;">
+                      <li>FOR RESTAURANTS</li>
+                      <br>
+                      <li class="tt" style="font-weight: lighter;">Partner With Us</li>
+                      <li class="tt" style="font-weight: lighter;">Apps For You</li></div>
+                    </ul>
+                      <br>
+                      <ul class="mm" style="list-style: none;">
+                        <li>FOR ENTERPRISES</li>
+                        <br>
+                       <li class="ss" style="font-weight: lighter;">Zomato For Enterprise</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="learnmore">
+                    <ul class="lm" style="list-style: none;">
+                      <li>LEARN MORE</li>
+                      <br><div class="bb" style="font-weight: lighter;">
+                      <li>Privacy</li>
+                      <li>Security</li>
+                      <li>Terms & Conditions</li></div>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="social">
+                    <ul class="sl" style="list-style: none;">
+                      <li>&nbsp;&nbsp;&nbsp;SOCIAL LINKS</li>
+                      <br>
+                      <li><i class="fa-brands fa-twitter fa-xl"></i>&nbsp;<i class="fa-brands fa-instagram fa-xl"></i>&nbsp;<i class="fa-brands fa-facebook fa-xl"></i>&nbsp;<i class="fa-brands fa-youtube fa-xl" style="color: #1e2d48;"></i>&nbsp;<i class="fa-brands fa-linkedin fa-xl"></i></li>
+                      <br>
+                      <div class="imgg">
+                        <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" width="130px">
+                      </div>
+                      <br>
+                      <div class="imggg">
+                        <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" width="130px">
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.
+            </div>
+          </div>
+        </section>
+    </body>
+</html>
